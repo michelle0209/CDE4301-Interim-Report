@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Project Title</title>
+  <title>AI conversation coach for nursing communication training</title>
   <link rel="icon" href="./favicon.ico" type="image/x-icon">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.16.0/cdn/themes/light.css" />
@@ -36,15 +35,21 @@
 
 <body>
   <div class="content">
+
+    <image-component
+        tag="image"
+        source="assets/NUS_logo_full-horizontal.jpg"
+        subtitle="">
+    </image-component>
+
     <h2>AI conversation coach for nursing communication training</h2>
-
-    <!-- This is the team member component use to display details about your team members -->
+    <h2>Members:</h2>
+    <!-- Team Members -->
     <div class="team-member-wrapper">
-      <team-member avatar="assets/blackranger.png" name="Muhammad" department="Biomedical Engineering"></team-member>
-      <team-member avatar="assets/pinkranger.png" name="Melisa" department="Biomedical Engineering"></team-member>
-      <team-member avatar="assets/blueranger.png" name="Michelle Tay Xin Ru" department="Biomedical Engineering"></team-member>
+      <team-member name="Muhammad" department="Biomedical Engineering"></team-member>
+      <team-member name="Melisa" department="Biomedical Engineering"></team-member>
+      <team-member name="Michelle Tay Xin Ru" department="Biomedical Engineering"></team-member>
     </div>
-
     <!-- This is a divide from the shoelace library for aesthetic purpose -->
     <sl-divider></sl-divider>
 
@@ -71,12 +76,46 @@
         <sl-tree-item expanded>
           <a href="#section-header-2">2. Background research</a>
           <sl-tree-item>
-            <a href="#sub-section-2-header-1">2.1 </a>
+            <a href="#sub-section-2-header-1">2.1 Primary research</a>
           </sl-tree-item>
           <sl-tree-item>
-            <a href="#sub-section-2-header-2">2.2. Sub-section Header 2</a>
+            <a href="#sub-section-2-header-2">2.2 Literature review</a>
           </sl-tree-item>
-        </sl-tree-item>
+          <sl-tree-item>
+            <a href="#sub-section-2-header-3">2.2.1 Coaching leadership in nursing</a>
+          </sl-tree-item> 
+          <sl-tree-item>  
+            <a href="#sub-section-2-header-4">2.2.2 Limits of one-off training without repeated practice and feedback</a>
+          </sl-tree-item> 
+          <sl-tree-item>  
+            <a href="#sub-section-2-header-5">2.2.3 Role-play and its limits</a>
+          </sl-tree-item> 
+          <sl-tree-item>  
+            <a href="#sub-section-2-header-6">2.2.4 AI-based practice for communication skills</a>
+          </sl-tree-item>        
+
+        <sl-tree-item expanded>
+          <a href="#section-header-3">3. Design specifications</a>
+          <sl-tree-item>
+            <a href="#sub-section-3-header-1">3.1 Functional requirements</a>
+          </sl-tree-item>
+          <sl-tree-item>
+            <a href="#sub-section-3-header-2">3.2 </a>
+          </sl-tree-item>
+          <sl-tree-item>
+            <a href="#sub-section-3-header-3">3.3 </a>
+          </sl-tree-item> 
+          <sl-tree-item>  
+            <a href="#sub-section-3-header-4">3.4 </a>
+          </sl-tree-item> 
+          <sl-tree-item>  
+            <a href="#sub-section-3-header-5">3.5 </a>
+          </sl-tree-item> 
+          <sl-tree-item>  
+            <a href="#sub-section-3-header-6">3.6 </a>
+          </sl-tree-item>            
+
+
 
         <sl-tree-item>
           <a href="#references">References</a>
@@ -96,19 +135,19 @@
       <div id="sub-section-1-header-1">
         <h3>1.1 Background</h3>
         <p>
-          Nurses face a range of workplace challenges, including high workloads, work-related stress and burnout. 
-          A meta-analysis conducted by Ge et al. (2023), involving 94 studies across more than 30 countries, estimated the global prevalence of nursing burnout at 30%. 
-          Similarly, a study of 1,826 nurses at Singapore General Hospital found that 39% experienced high emotional exhaustion, 40% high depersonalisation, and 59% low personal accomplishment (Ang, 2016). 
-          Furthermore, Kiptulon (2024) identified several factors contributing to work-related stress among nurses, including understaffing, role conflict, bullying, and a lack of support from supervisors and colleagues. 
-          Their systematic review also found that positive organisational cultures, characterised by effective communication, teamwork, and supportive leadership, were associated with lower levels of work-related stress. 
-          These findings highlight the importance of providing nurses with appropriate guidance and a supportive working environment to help them manage workplace challenges and maintain their well-being.
+        Nurses face a range of workplace challenges, including high workloads, work-related stress and burnout. 
+        A meta-analysis conducted by Ge et al. (2023), involving 94 studies across more than 30 countries, estimated the global prevalence of nursing burnout at 30%. 
+        Similarly, a study of 1,826 nurses at Singapore General Hospital found that 39% experienced high emotional exhaustion, 40% high depersonalisation, and 59% low personal accomplishment (Ang, 2016). 
+        Furthermore, Kiptulon (2024) identified several factors contributing to work-related stress among nurses, including understaffing, role conflict, bullying, and a lack of support from supervisors and colleagues. 
+        Their systematic review also found that positive organisational cultures, characterised by effective communication, teamwork, and supportive leadership, were associated with lower levels of work-related stress. 
+        These findings highlight the importance of providing nurses with appropriate guidance and a supportive working environment to help them manage workplace challenges and maintain their well-being.
         <p>
-          Effective communication is essential to nursing practice, enabling nurse managers to support staff development, address workplace challenges, and foster a positive work environment (Meneses-La-Riva, 2025). 
-          Nurse managers also play an important role in guiding staff nurses through challenges such as workplace conflicts, work-related stress and professional development. Therefore, having effective coaching skills can help nurse managers support their staff in handling these situations. 
-          Unlike traditional directive leadership approaches, coaching leadership emphasises active listening, reflective questioning, and helping individuals develop their own solutions. 
-          By adopting a coaching approach, nurse managers can encourage staff nurses to reflect on their experiences and identify areas for improvement, while also helping them build confidence, improve communication, and take greater ownership of their professional development (Richardson, 2023).
-          To promote a coaching-oriented leadership culture, the National University Hospital (NUH) incorporates coaching principles into its Exemplary Leader Coaching Programme (ELCP) through a one-day masterclass. 
-          In the masterclass, nurse managers learn coaching mindsets, communication techniques, the 3P and the GROW-L frameworks. The 3P framework consists of Partner, Practice and Process. The GROW-L framework guides coaching conversations through five stages, which are Goal, Reality, Options, Will, and Learning. 
+        Effective communication is essential to nursing practice, enabling nurse managers to support staff development, address workplace challenges, and foster a positive work environment (Meneses-La-Riva, 2025). 
+        Nurse managers also play an important role in guiding staff nurses through challenges such as workplace conflicts, work-related stress and professional development. Therefore, having effective coaching skills can help nurse managers support their staff in handling these situations. 
+        Unlike traditional directive leadership approaches, coaching leadership emphasises active listening, reflective questioning, and helping individuals develop their own solutions. 
+        By adopting a coaching approach, nurse managers can encourage staff nurses to reflect on their experiences and identify areas for improvement, while also helping them build confidence, improve communication, and take greater ownership of their professional development (Richardson, 2023).
+        To promote a coaching-oriented leadership culture, the National University Hospital (NUH) incorporates coaching principles into its Exemplary Leader Coaching Programme (ELCP) through a one-day masterclass. 
+        In the masterclass, nurse managers learn coaching mindsets, communication techniques, the 3P and the GROW-L frameworks. The 3P framework consists of Partner, Practice and Process. The GROW-L framework guides coaching conversations through five stages, which are Goal, Reality, Options, Will, and Learning. 
         <p>
         While the ELCP provides nurse managers with a foundation in coaching principles, they still need repeated practice, reflection, and feedback to develop their coaching and communication skills. 
         Applying these techniques in the workplace can be challenging, especially when nurse managers face sensitive conversations or staff nurses who resist feedback. 
@@ -120,9 +159,9 @@
       <div id="sub-section-1-header-2">
         <h3>1.2 Problem statement</h3>
         <p>
-          Nurse managers who undergo NUH's ELCP are taught structured coaching principles and skills through the one-day masterclass and are expected to apply these skills in workplace coaching conversations. 
-          However, they may have limited opportunities to practice coaching conversations before applying these skills with actual staff nurses. They may also have limited opportunities to receive immediate feedback on their coaching approach. 
-          As a result, nurse managers may find it challenging to apply the coaching techniques they have learnt in real workplace conversations.
+        Nurse managers who undergo NUH's ELCP are taught structured coaching principles and skills through the one-day masterclass and are expected to apply these skills in workplace coaching conversations. 
+        However, they may have limited opportunities to practice coaching conversations before applying these skills with actual staff nurses. They may also have limited opportunities to receive immediate feedback on their coaching approach. 
+        As a result, nurse managers may find it challenging to apply the coaching techniques they have learnt in real workplace conversations.
         </p>
       </div>
 
@@ -175,30 +214,84 @@
         The project initially explored AI-supported practice for nursing communication in general, but these meetings helped narrow its focus to coaching conversations for nurse managers. 
         Therefore, the meetings allowed the team to clarify requirements and keep the design aligned with NUH’s expectations as the project progressed. 
         </p>
-        <p>Through these meetings, several challenges with coaching training were raised by the nurse head. 
-          Firstly, it was mentioned that the ELCP masterclass alone is not sufficient for nurse managers to build their confidence in coaching, as traditional role play, which is the common method to practise, requires facilitators and time, which limits the opportunities for nurse managers to practise. 
-          Furthermore, the coaching experience and feedback received may vary depending on the facilitator and training setting. 
-          As nurse managers encounter increasingly complex workplace interactions, such as emotionally sensitive conversations and staff-related challenges, opportunities to practise realistic coaching scenarios become particularly important. 
-          These findings suggest a need for a more accessible and reliable practice platform that allows nurse managers to reinforce their coaching skills beyond the masterclass.</p>
-      </div>
 
-      <div id="sub-section-2-header-2">
-        <h3>2.2. Sub-section Header 2</h3>
         <p>
-          Vitae proin sagittis nisl rhoncus mattis rhoncus urna neque viverra. Dignissim convallis aenean et tortor at
-          risus viverra adipiscing. Facilisi nullam vehicula ipsum a arcu cursus. Adipiscing elit pellentesque
-          habitant
-          morbi tristique senectus et netus. Turpis massa tincidunt dui ut ornare lectus. Suspendisse sed nisi lacus
-          sed. Diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Ut ornare lectus sit amet est
-          placerat in egestas. Magna fringilla urna porttitor rhoncus. Imperdiet dui accumsan sit amet.
+        Through these meetings, several challenges with coaching training were raised by the nurse head. 
+        Firstly, it was mentioned that the ELCP masterclass alone is not sufficient for nurse managers to build their confidence in coaching, as traditional role play, which is the common method to practise, requires facilitators and time, which limits the opportunities for nurse managers to practise. 
+        Furthermore, the coaching experience and feedback received may vary depending on the facilitator and training setting. 
+        As nurse managers encounter increasingly complex workplace interactions, such as emotionally sensitive conversations and staff-related challenges, opportunities to practise realistic coaching scenarios become particularly important. 
+        These findings suggest a need for a more accessible and reliable practice platform that allows nurse managers to reinforce their coaching skills beyond the masterclass.
         </p>
 
-        <!-- This is an example of how you might use the table component -->
-        <table-component subtitle="Table: Demo table">
-          <div id="table-1"></div>
-        </table-component>
+      <div id="sub-section-2-header-2">
+        <h3>2.2 Literature review</h3>
+        <p>
+        A literature review was conducted to examine the importance of coaching leadership in nursing and the effectiveness of existing approaches to coaching training. 
+        The review focuses on the role of repeated practice and feedback in developing coaching competence, the benefits and limitations of traditional role-play, and the potential of AI communication bots to support the development of coaching or communication skills.
+        </p>
+
+      <div id="sub-section-2-header-3">
+        <h3>2.2.1 Coaching leadership in nursing</h3>
+        <p>
+        As healthcare systems face increasing workforce challenges, burnout, and complexity in patient care, traditional command-and-control coaching approaches may no longer be effective in addressing the evolving needs of the nursing team. 
+        These challenges highlight the need to maintain nurses' job satisfaction and work engagement to support a sustainable nursing workforce. A study of 900 nurses in the United States found that work engagement was significantly associated with job satisfaction (p < 0.001) (Wei et al., 2023). 
+        These findings highlight the importance of adopting a supportive leadership approach to promote nurses' work engagement and well-being, given the association between work engagement and perceived quality of patient care. 
+        In response to these challenges, coaching leadership is shifting from traditional command-and-control approaches towards coaching leadership, which emphasises empathy, collaboration and a growth-oriented mindset. 
+        Instead of instructing their staff and providing solutions for them, nurse managers are adopting this coaching leadership to guide the nurses through reflections and encourage them to develop their own critical thinking and problem-solving skills (Wei et al., 2026).
+        </p>
+
+      <div id="sub-section-2-header-4">
+        <h3>2.2.2 Limits of one-off training without repeated practice and feedback</h3>
+        <p>
+        Although coaching leadership is increasingly recognised as an important approach in nursing, developing effective coaching skills requires more than understanding coaching principles. 
+        It also requires opportunities for repeated practice and feedback. Grant (2007) compared a 13-week coaching training programme involving 23 participants with a 2-day intensive programme involving 20 participants. 
+        Both programmes significantly improved their coaching skills, but the 13-week programme produced a larger gain of 7.3 compared to the 2-day programme with a gain of 3.1. Furthermore, only the 13-week programme showed an improvement in emotional intelligence. 
+        Since the frameworks used were the same for both programmes, the difference in outcomes suggests that spaced training with repeated practice and feedback may be more effective for developing coaching competencies than short intensive training alone. 
+        This highlights the potential value of providing nurse managers with more accessible, low-risk opportunities to repeatedly practise coaching conversations and reinforce the skills learnt during formal training such as the ELCP masterclass.
+        </p>
+
+      <div id="sub-section-2-header-5">
+        <h3>2.2.3 Role-play and its limits</h3>
+        <p>
+        2 commonly used forms of traditional role play are peer role play and role play with the use of standardised participants (SPs). 
+        In peer role-play, learners take turns to be the coach and coachee, which can help them to experience both roles and understand each other's perspectives (Paramasivan & Khoo, 2020). 
+        While this is a low-cost and easily accessible approach, the realism of the scenario and the quality of the feedback depend on the partner’s acting ability and coaching experience. 
+        Learners may also feel self-conscious practising in front of colleagues, which may prevent them from experimenting with new coaching skills. 
+        </p>
+        <p>  
+        SPs, on the other hand, provide realistic scenarios and structured feedback, which addresses the limitations of peer role-play. 
+        However, providing consistent feedback remains a challenge, as even trained SPs may experience difficulty in delivering constructive and specific feedback to learners. 
+        According to a nationwide survey involving 250 SPs conducted by Abe et al. (2011), 56.8% reported difficulty with 4 or more feedback-related tasks, such as giving positive feedback when a learner performed poorly or distinguishing between several learners' interviews when giving individual feedback. Furthermore, engaging SPs is resource-intensive, as it requires funding, training, and coordinated scheduling (Sehgal et al., 2025). As a result, these limitations may limit the accessibility and frequency of practice opportunities. 
+        </p>
+        <p>  
+        Together, these limitations highlight the need for a more flexible and accessible approach that supports repeated coaching practice and structured feedback, leading to the exploration of AI-based conversational simulations as a potential alternative.
+        </p>
+
+      <div id="sub-section-2-header-6">
+        <h3>2.2.4 AI-based practice for communication skills</h3>
+        <p>
+        Advances in artificial intelligence (AI) have enabled conversational simulations where learners can practise communication with virtual characters that respond in real time. 
+        Powered by large language models and speech technologies, these tools can provide realistic interactions and have been explored in healthcare education to enhance learning and skill development (Herschbach et al., 2025).
+        Unlike traditional role-plays, an AI character can maintain a consistent scenario and persona, providing learners with a more standardised practice experience. 
+        Furthermore, these simulations are available on demand and can be repeated as often as needed, potentially at a lower marginal cost compared to SPs. 
+        Learners may also feel less conscious when interacting with an AI than another person, creating a risk-free environment where they can experiment with different communication techniques and learn from their mistakes.
+        </p>
+        <p>   
+        Beyond conversations, AI-based systems can also provide structured feedback. 
+        These systems can be trained to analyse the content of the conversation, assess vocal tones, facial expressions, and other non-verbal cues to evaluate different aspects of communication performance (Stamer et al., 2023). 
+        Based on this analysis, personalised feedback can be generated to help learners identify their strengths, areas for improvement, and opportunities to refine their communication techniques. 
+        The use of AI systems are often paired with the use of Virtual Reality (VR) to enhance realism and immersiveness of simulated interactions. 
+        Through the use of VR, learners are able to 
+        </p>        
+
+      <sl-divider></sl-divider>  
+      <div id="section-header-3">
+        <h2> 3. Design specifications </h2>
+        </p>
       </div>
-    </div>
+
+      <div id="sub-section-3-header-1">
+        <h3>3.1 Functional requirements</h3>
 
     <!-- This is an example of how you can use the references component to create references -->
     <div id="references" class="references">
@@ -206,267 +299,135 @@
       <h2>References</h2>
       <ul>
         <li>
-          Brody, J. E. (2007, December 11). Mental reserves keep brain agile. The New York Times. Retrieved from
-          http://www.dowjones.com/factiva/
+          Wei, H., Leising, B., Greenwood, S., Opton, L., Sullivan, L. K., Veesart, A., Cherry, B., Weber, J. R., & Randall, J. C. (2026). Coaching leadership in nursing: 
+          From command-and-control to growth-focused approaches. Nurse Leader, 24(3), Article 102633. 
+          <br>
+          <a href="https://www-sciencedirect-com.libproxy1.nus.edu.sg/science/article/pii/S1541461225002873?via%3Dihub">
+            https://www-sciencedirect-com.libproxy1.nus.edu.sg/science/article/pii/S1541461225002873?via%3Dihub
+          </a>
         </li>
+
         <li>
-          Chamberlin, J., Novotney, A., Packard, E., & Price, M. (2008, May). Enhancing worker well-being: Occupational
-          health psychologists convene to share their research on work, stress, and health. Monitor on Psychology,
-          39(5), 26-29.
+          Wei, H., Horsley, L., Cao, Y., Haddad, L. M., Hall, K. C., Robinson, R., Powers, M., & Anderson, D. G. (2023). 
+          The associations among nurse work engagement, job satisfaction, quality of care, and intent to leave: A national survey in the United States. 
+          International Journal of Nursing Sciences, 10(4), 476–484. 
+          <br>
+          <a href="https://www-sciencedirect-com.libproxy1.nus.edu.sg/science/article/pii/S2352013223001035#sec7 ">
+            https://www-sciencedirect-com.libproxy1.nus.edu.sg/science/article/pii/S2352013223001035#sec7 
+          </a>
         </li>
+
         <li>
-          Jones, T. J., & Fields, N. (2003). Emotional quotient and personality. E-Journal of Applied Psychology, 2(2),
-          38-45. Retrieved from http://ejournalappliedpsyc/index.php/ejap
-        </li>
-      </ul>
-    </div>
-  </div>
-
-          <!-- This is an example of how you might use the video component -->
-        <video-component tag="rick" source="https://www.youtube.com/embed/dQw4w9WgXcQ"
-          subtitle="Video: Never gonna give you up?"></video-component>
-
-        <!-- This is an example of how you might use the image component -->
-        <image-component tag="image" source="assets/requirement.png"
-          subtitle="Image 1: iDP suggested pathway"></image-component>
-          
-          
-  <!-- This is the code to display the scroll to top button for ergonomic -->
-  <!-- You can leave it as it is, or if you don't like its aesthetics you can also just delete it, -->
-  <!-- but it might reduce the user experience. -->
-  <sl-button class="scroll-to-top" variant="primary" size="medium" circle onclick="scrollToTop()">
-    <sl-icon name="arrow-up" label="Settings"></sl-icon>
-  </sl-button>
-
-  <script src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
-  <script type="module" src="./components/table-component/table-component.js"></script>
-</body>
-
-</html>
-=======
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Project Title</title>
-  <link rel="icon" href="./favicon.ico" type="image/x-icon">
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.16.0/cdn/themes/light.css" />
-  <script type="module"
-    src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.16.0/cdn/shoelace-autoloader.js"></script>
-
-  <link rel="stylesheet" href="./index.css">
-
-  <link rel="stylesheet" href="./components/team-member/team-member.css">
-  <script type="module" src="./components/team-member/team-member.js"></script>
-
-  <link rel="stylesheet" href="./components/table-of-content/table-of-content.css">
-
-  <script type="module" src="./components/image/image-component.js"></script>
-
-  <script type="module" src="./components/video/video.js"></script>
-
-  <link rel="stylesheet" href="./components/references/references.css">
-
-  <link rel="stylesheet" href="./components/scroll-to-top/scroll-to-top.css">
-  <script src="./components/scroll-to-top/scroll-to-top.js"></script>
-
-  <script src="./components/table-component/table-component.js"></script>
-
-  <link href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
-</head>
-
-<body>
-  <div class="content">
-    <h2>AI conversation coach for nursing communication training</h2>
-
-    <!-- This is the team member component use to display details about your team members -->
-    <div class="team-member-wrapper">
-      <team-member avatar="assets/blackranger.png" name="Muhammad" department="Biomedical Engineering"></team-member>
-      <team-member avatar="assets/pinkranger.png" name="Melisa" department="Biomedical Engineering"></team-member>
-      <team-member avatar="assets/blueranger.png" name="Michelle Tay Xin Ru" department="Biomedical Engineering"></team-member>
-    </div>
-
-    <!-- This is a divide from the shoelace library for aesthetic purpose -->
-    <sl-divider></sl-divider>
-
-    <!-- This is the table-of-content component use to define all of the link directly to each section -->
-    <div class="table-of-content">
-      <h2>Table of Contents</h2>
-      <sl-tree>
-        <sl-tree-item expanded>
-          <a href="#section-header-1">1. Introduction</a>
-          <sl-tree-item>
-            <a href="#sub-section-1-header-1">1.1 Background </a>
-          </sl-tree-item>
-          <sl-tree-item>
-            <a href="#sub-section-1-header-2">1.2 Problem statement</a>
-          </sl-tree-item>
-          <sl-tree-item>
-            <a href="#sub-section-1-header-3">1.3 Value proposition</a>
-          </sl-tree-item>
-          <sl-tree-item>
-            <a href="#sub-section-1-header-4">1.4 Objectives and Scope</a>    
-        </sl-tree-item>
+          Grant, A. M. (2007). Enhancing coaching skills and emotional intelligence through training. 
+          Industrial and Commercial Training, 39(5), 257–266. 
+          <br>
+          <a href="https://www-proquest-com.libproxy1.nus.edu.sg/docview/214104530?pq-origsite=summon&sourcetype=Scholarly%20Journals ">
+            https://www-proquest-com.libproxy1.nus.edu.sg/docview/214104530?pq-origsite=summon&sourcetype=Scholarly%20Journals 
+          </a>
+        </li> 
         
-
-        <sl-tree-item expanded>
-          <a href="#section-header-2">2. Background research</a>
-          <sl-tree-item>
-            <a href="#sub-section-2-header-1">2.1 </a>
-          </sl-tree-item>
-          <sl-tree-item>
-            <a href="#sub-section-2-header-2">2.2. Sub-section Header 2</a>
-          </sl-tree-item>
-        </sl-tree-item>
-
-        <sl-tree-item>
-          <a href="#references">References</a>
-        </sl-tree-item>
-      </sl-tree>
-    </div>
-    <sl-divider></sl-divider>
-
-    <div>
-
-      <!-- This is an example of what a section might look like -->
-      <div id="section-header-1">
-        <h2> 1. Introduction </h2>
-        </p>
-      </div>
-
-      <div id="sub-section-1-header-1">
-        <h3>1.1 Background</h3>
-        <p>
-          Nurses face a range of workplace challenges, including high workloads, work-related stress and burnout. 
-          A meta-analysis conducted by Ge et al. (2023), involving 94 studies across more than 30 countries, estimated the global prevalence of nursing burnout at 30%. 
-          Similarly, a study of 1,826 nurses at Singapore General Hospital found that 39% experienced high emotional exhaustion, 40% high depersonalisation, and 59% low personal accomplishment (Ang, 2016). 
-          Furthermore, Kiptulon (2024) identified several factors contributing to work-related stress among nurses, including understaffing, role conflict, bullying, and a lack of support from supervisors and colleagues. 
-          Their systematic review also found that positive organisational cultures, characterised by effective communication, teamwork, and supportive leadership, were associated with lower levels of work-related stress. 
-          These findings highlight the importance of providing nurses with appropriate guidance and a supportive working environment to help them manage workplace challenges and maintain their well-being.
-        <p>
-          Effective communication is essential to nursing practice, enabling nurse managers to support staff development, address workplace challenges, and foster a positive work environment (Meneses-La-Riva, 2025). 
-          Nurse managers also play an important role in guiding staff nurses through challenges such as workplace conflicts, work-related stress and professional development. Therefore, having effective coaching skills can help nurse managers support their staff in handling these situations. 
-          Unlike traditional directive leadership approaches, coaching leadership emphasises active listening, reflective questioning, and helping individuals develop their own solutions. 
-          By adopting a coaching approach, nurse managers can encourage staff nurses to reflect on their experiences and identify areas for improvement, while also helping them build confidence, improve communication, and take greater ownership of their professional development (Richardson, 2023).
-          To promote a coaching-oriented leadership culture, the National University Hospital (NUH) incorporates coaching principles into its Exemplary Leader Coaching Programme (ELCP) through a one-day masterclass. 
-          In the masterclass, nurse managers learn coaching mindsets, communication techniques, the 3P and the GROW-L frameworks. The 3P framework consists of Partner, Practice and Process. The GROW-L framework guides coaching conversations through five stages, which are Goal, Reality, Options, Will, and Learning. 
-        <p>
-        While the ELCP provides nurse managers with a foundation in coaching principles, they still need repeated practice, reflection, and feedback to develop their coaching and communication skills. 
-        Applying these techniques in the workplace can be challenging, especially when nurse managers face sensitive conversations or staff nurses who resist feedback. 
-        Nurse managers who are used to giving direct instruction may also find it difficult to change their existing communication habits. 
-        Therefore, repeated coaching practice can help nurse managers become more familiar with techniques they have learnt and apply them more effectively in real workplace conversations. 
-        </p>
-      </div>
-
-      <div id="sub-section-1-header-2">
-        <h3>1.2 Problem statement</h3>
-        <p>
-          Nurse managers who undergo NUH's ELCP are taught structured coaching principles and skills through the one-day masterclass and are expected to apply these skills in workplace coaching conversations. 
-          However, they may have limited opportunities to practice coaching conversations before applying these skills with actual staff nurses. They may also have limited opportunities to receive immediate feedback on their coaching approach. 
-          As a result, nurse managers may find it challenging to apply the coaching techniques they have learnt in real workplace conversations.
-        </p>
-      </div>
-
-      <div id="sub-section-1-header-3">
-        <h3>1.3 Value proposition</h3>
-        <p>
-        The proposed AI-based coaching simulator aims to provide nurse managers with an on-demand platform to practice coaching conversations based on the principles introduced during the ELCP masterclass. 
-        Through the coaching simulator, nurse managers will take on the role of the coach and interact with an AI staff nurse who acts as the coachee. 
-        The AI staff nurse will respond to the nurse manager based on the different coaching scenarios, allowing nurse managers to handle different workplace situations. 
-        After each conversation, the system will provide structured feedback based on the 3P and GROW-L frameworks to help nurse managers identify their strengths and areas for improvement. 
-        The system also allows nurse managers to retry scenarios and try different responses at their own pace. 
-        Through repeated practice and feedback, the simulator helps nurse managers to build confidence before applying the techniques they have learnt in real workplace conversations
-        </p>
-
-      <div id="sub-section-1-header-4">
-        <h3>1.4 Objectives and Scope</h3>
-        <p>
-        The main objective of this project is to develop an AI-based coaching simulator that allows nurse managers to practice coaching conversations with virtual staff nurses across different scenarios created. 
-        </p>
-        <p>The specific objectives of this project are:</p>
-        <ul>
-          <li>To develop an AI-based conversation system that allows nurse managers to interact with AI staff nurse in different coaching scenarios</li>
-          <li>To develop an AI-based assessment system based on 3P and GROW-L frameworks to evaluate the nurse managers’ coaching skills and provide structured feedback on areas demonstrated well and on areas that can be improved</li>
-          <li>To develop both web- based and virtual reality (VR) interfaces that allow nurse managers to practice coaching conversations </li>
-          <li>To incorporate emotional responses and facial expressions into the virtual nurse staff to make coaching more realistic  </li>
-        </ul>
-          <p>
-        This project focuses on coaching conversations between a nurse manager who acts as a coach and an AI staff nurse who acts as the coachee. 
-        The simulator is a coaching tool that will only assess the nurse manager’s coaching skills, while the AI staff nurse will respond based on the conversation. 
-        The simulator is not meant to replace the NUH’s existing ELCP masterclass. It is for nurse managers to practice the coaching techniques they learnt in the masterclass and to build confidence before applying them in real workplace conversations. 
-        </p>
-
-    </div>
-
-
-    <br />
-    <br />
-    <sl-divider></sl-divider>
-    <div>
-      <div id="section-header-2">
-        <h2>2. Background Research</h2>
-        <p></p>
-      </div>
-
-      <div id="sub-section-2-header-1">
-        <h3>2.1 Primary research</h3>
-        <p>
-        To gain a deeper insight into the problem, regular meetings were held with the nurse head at NUH from September 2026 onwards. 
-        The purpose was to understand how coaching skills are trained and assessed in the hospitals, and what practice tools are needed to assist them with improving the coaching skills of nurse managers. 
-        The project initially explored AI-supported practice for nursing communication in general, but these meetings helped narrow its focus to coaching conversations for nurse managers. 
-        Therefore, the meetings allowed the team to clarify requirements and keep the design aligned with NUH’s expectations as the project progressed. 
-        </p>
-        <p>Through these meetings, several challenges with coaching training were raised by the nurse head. 
-          Firstly, it was mentioned that the ELCP masterclass alone is not sufficient for nurse managers to build their confidence in coaching, as traditional role play, which is the common method to practise, requires facilitators and time, which limits the opportunities for nurse managers to practise. 
-          Furthermore, the coaching experience and feedback received may vary depending on the facilitator and training setting. 
-          As nurse managers encounter increasingly complex workplace interactions, such as emotionally sensitive conversations and staff-related challenges, opportunities to practise realistic coaching scenarios become particularly important. 
-          These findings suggest a need for a more accessible and reliable practice platform that allows nurse managers to reinforce their coaching skills beyond the masterclass.</p>
-      </div>
-
-      <div id="sub-section-2-header-2">
-        <h3>2.2. Sub-section Header 2</h3>
-        <p>
-          Vitae proin sagittis nisl rhoncus mattis rhoncus urna neque viverra. Dignissim convallis aenean et tortor at
-          risus viverra adipiscing. Facilisi nullam vehicula ipsum a arcu cursus. Adipiscing elit pellentesque
-          habitant
-          morbi tristique senectus et netus. Turpis massa tincidunt dui ut ornare lectus. Suspendisse sed nisi lacus
-          sed. Diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Ut ornare lectus sit amet est
-          placerat in egestas. Magna fringilla urna porttitor rhoncus. Imperdiet dui accumsan sit amet.
-        </p>
-
-        <!-- This is an example of how you might use the table component -->
-        <table-component subtitle="Table: Demo table">
-          <div id="table-1"></div>
-        </table-component>
-      </div>
-    </div>
-
-    <!-- This is an example of how you can use the references component to create references -->
-    <div id="references" class="references">
-      <sl-divider></sl-divider>
-      <h2>References</h2>
-      <ul>
         <li>
-          Brody, J. E. (2007, December 11). Mental reserves keep brain agile. The New York Times. Retrieved from
-          http://www.dowjones.com/factiva/
+          Paramasivan, A., & Khoo, D. (2020).  
+          Standardized patients versus peer role play—Exploring the experience, efficacy, and cost-effectiveness in residency training module for breaking bad news. 
+          Journal of Surgical Education, 77(2), 479–484.  
+          <br>
+          <a href="https://www-clinicalkey-com.libproxy1.nus.edu.sg/#!/content/1-s2.0-S1931720419305641 ">
+            https://www-clinicalkey-com.libproxy1.nus.edu.sg/#!/content/1-s2.0-S1931720419305641 
+          </a>
         </li>
+        
         <li>
-          Chamberlin, J., Novotney, A., Packard, E., & Price, M. (2008, May). Enhancing worker well-being: Occupational
-          health psychologists convene to share their research on work, stress, and health. Monitor on Psychology,
-          39(5), 26-29.
-        </li>
+          Sehgal, N. K. R., Kambhamettu, H., Chang, A., Zhu, A., Ungar, L., & Guntuku, S. C. (2025) 
+          PAL: Designing conversational agents as scalable, cooperative patient simulators for palliative-care training. 
+          In CSCW Companion '25: Companion publication of the 2025 conference on computer-supported cooperative work and social computing  
+          <br>
+          <a href="https://arxiv.org/pdf/2507.02122 ">
+            https://arxiv.org/pdf/2507.02122 
+          </a>
+        </li>        
+
         <li>
-          Jones, T. J., & Fields, N. (2003). Emotional quotient and personality. E-Journal of Applied Psychology, 2(2),
-          38-45. Retrieved from http://ejournalappliedpsyc/index.php/ejap
-        </li>
+          Abe, K., Roter, D., Erby, L. H., & Ban, N. (2011).
+          A nationwide survey of standardized patients: Who they are, what they do, and how they experience their work. 
+          Patient Education and Counseling, 84(2), 261–264.   
+          <br>
+          <a href="https://www-clinicalkey-com.libproxy1.nus.edu.sg/#!/content/1-s2.0-S0738399110004180">
+            https://www-clinicalkey-com.libproxy1.nus.edu.sg/#!/content/1-s2.0-S0738399110004180
+          </a>
+        </li> 
+
+        <li>
+          Meneses-La-Riva, M. E., Fernández-Bedoya, V. H., Suyo-Vega, J. A., Ocupa-Cabrera, H. G., Grijalva-Salazar, R. V., & Ocupa-Meneses, G. di D. (2025, February 7). 
+           Enhancing healthcare efficiency: The relationship between effective communication and teamwork among nurses in Peru. Nursing reports (Pavia, Italy).     
+          <br>
+          <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11857919/">
+            https://pmc.ncbi.nlm.nih.gov/articles/PMC11857919/
+          </a>
+        </li> 
+
+        <li>
+           Herschbach, L., Festl-Wietek, T., Stegemann-Philipps, C., Sonanini, A., Herrmann, B., Erschens, R., Herrmann-Werner, A., & Holderried, F. (2025). 
+           Evaluation of an AI-Based chatbot providing Real-Time feedback in communication training for Mental Health care professionals: Proof-of-Concept Observational study. 
+           Journal of Medical Internet Research, 27, e82818. 
+          <br>
+          <a href="https://doi.org/10.2196/82818 ">
+            https://doi.org/10.2196/82818 
+          </a>
+        </li> 
+
+        <li>
+           Stamer, T., Steinhäuser, J., & Flägel, K. (2023). Artificial Intelligence Supporting the training of communication skills in the education of health care professions: Scoping review. 
+           Journal of Medical Internet Research, 25, e43311. 
+          <br>
+          <a href=" https://doi.org/10.2196/43311">
+             https://doi.org/10.2196/43311 
+          </a>
+        </li> 
+
+        <li>
+           Richardson (2023, June 26). Coaching in nursing: An integrative literature review.
+          <br>
+          <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/nop2.1925 ">
+             https://onlinelibrary.wiley.com/doi/full/10.1002/nop2.1925 
+          </a>
+        </li> 
+
+         <li>
+          Ge, M. W., Hu, F. H., Jia, Y. J., Tang, W., Zhang, W. Q., & Chen, H. L. (2023). 
+          Global prevalence of nursing burnout syndrome and temporal trends for the last 10 years:
+          A meta-analysis of 94 studies covering over 30 countries. Journal of clinical nursing, 32(17-18), 5836–5854.
+          <br>
+          <a href="https://doi.org/10.1111/jocn.16708 ">
+            https://doi.org/10.1111/jocn.16708 
+          </a>
+        </li> 
+        
+         <li>
+          Kiptulon, E.K., Elmadani, M., Limungi, G.M. et al. (2024, December 2). 
+          Transforming nursing work environments: the impact of organizational culture on work-related stress among nurses: a systematic review.
+          <br>
+          <a href="https://doi.org/10.1186/s12913-024-12003-x ">
+              https://doi.org/10.1186/s12913-024-12003-x 
+          </a>
+        </li>         
+
+         <li>
+          Ang, S. Y., Dhaliwal, S. S., Ayre, T. C., Uthaman, T., Fong, K. Y., Tien, C. E., Zhou, H., & Della, P. (2016).
+          Demographics and Personality Factors Associated with Burnout among Nurses in a Singapore Tertiary Hospital.
+          BioMed research international, 2016, 6960184.
+          <br>
+          <a href="https://doi.org/10.1155/2016/6960184">
+              https://doi.org/10.1155/2016/6960184
+          </a>
+        </li> 
+   
+
       </ul>
     </div>
   </div>
 
+  
+            <sl-divider></sl-divider>
           <!-- This is an example of how you might use the video component -->
         <video-component tag="rick" source="https://www.youtube.com/embed/dQw4w9WgXcQ"
           subtitle="Video: Never gonna give you up?"></video-component>
@@ -474,7 +435,13 @@
         <!-- This is an example of how you might use the image component -->
         <image-component tag="image" source="assets/requirement.png"
           subtitle="Image 1: iDP suggested pathway"></image-component>
-          
+
+        <!-- This is an example of how you might use the table component -->
+        <table-component subtitle="Table: Demo table">
+          <div id="table-1"></div>
+        </table-component>
+      </div>
+    </div>  
           
   <!-- This is the code to display the scroll to top button for ergonomic -->
   <!-- You can leave it as it is, or if you don't like its aesthetics you can also just delete it, -->
@@ -488,4 +455,3 @@
 </body>
 
 </html>
->>>>>>> b3519ba699560079f9648fc94037ad9dd8000df3
