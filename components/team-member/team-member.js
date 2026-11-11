@@ -24,7 +24,7 @@ class TeamMember extends HTMLElement {
     <style>
       :host {
         display: block;
-        max-width: 120px;
+        max-width: 180px;
         text-align: center;
       }
 
@@ -39,6 +39,7 @@ class TeamMember extends HTMLElement {
       p {
         text-align: center;
         margin: 8px 0;
+        white-space: nowrap;
       }
 
       @media (max-width: 599px) {

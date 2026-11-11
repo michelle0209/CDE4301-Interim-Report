@@ -6,9 +6,19 @@ body {
 }
 
 .content {
-  max-width: 800px;
+  max-width: 1250px;
   margin: auto;
-  padding: 10%;
+  padding: 20px 5%;
+}
+
+.diagram-image {
+    text-align: left;
+}
+
+.diagram-image img {
+    width: 70%;
+    max-width: 600px;
+    height: auto;
 }
 
 p, li {
