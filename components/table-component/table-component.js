@@ -1,13 +1,38 @@
+
 new gridjs.Grid({
-  columns: ["Name", "Email", "Phone Number"],
-  data: [
-    ["John", "john@example.com", "(353) 01 222 3333"],
-    ["Mark", "mark@gmail.com", "(01) 22 888 4444"],
-    ["Eoin", "eoin@gmail.com", "0097 22 654 00033"],
-    ["Sarah", "sarahcdd@gmail.com", "+322 876 1233"],
-    ["Afshin", "afshin@mail.com", "(353) 22 87 8356"],
+  columns: [
+    "Approach",
+    "Advantage",
+    "Limitation"
   ],
+
+  data: [
+    ["Prompt-based LLM",
+      gridjs.html("• Rapid implementation<br>• Low-cost<br>• No additional datasets required"),
+      "Limited control over virtual nurse's emotions and disclosure progression"],
+
+    ["System prompt guardrails",
+      gridjs.html("• Provides instructions to maintain character behaviour<br>• Restricts unwanted responses"),
+      "LLM may not consistently follow predefined instructions"],
+
+    ["Adaptive behavioural modelling",
+      gridjs.html("• Regulates how the virtual nurse's emotional state and behaviour change in response to the nurse manager's input<br>• More consistent and realistic responses"),
+      "• More complex to design and test"],
+
+    ["Predefined rule-based feedback",
+      "• Provides consistent assessment based on predefined conditions",
+      "• Limited flexibility in interpreting open-ended coaching conversations"],
+
+    ["LLM-based rubric-guided assessment",
+      "• Generates personalised feedback based on the coaching rubrics",
+      "• Assessment accuracy and reliability require expert validation"],
+
+    ["Separate AI coachee and assessor",
+      "• Allows conversation simulation and coaching assessment to be handled independently",
+      "• Requires additional system integration"]
+  ]
 }).render(document.getElementById("table-1"));
+
 
 class TableComponent extends HTMLElement {
   static get observedAttributes() {
