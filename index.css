@@ -45,3 +45,14 @@ h3 {
     left: 0px;
 }
 
+#appendices p {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    line-height: 1.5;
+}
+
+#appendices h3 {
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
