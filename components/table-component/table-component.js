@@ -76,7 +76,14 @@ new gridjs.Grid({
       "4. Validation and finalisation",
       gridjs.html("• Evaluate with NUH instructors and nurse managers<br>• Implement final fixes"),
       "Final deliverables"
+    ],
+
+    [
+      "5. AI Assessment Validation",
+      gridjs.html("• Collect coaching conversation transcripts from NUH coaching experts and the AI assessor<br>• Compare assessment results using Cohen's kappa and percentage agreement "),
+      "Validated AI assessor"
     ]
+      
   ]
 }).render(document.getElementById("table-2"));
 
