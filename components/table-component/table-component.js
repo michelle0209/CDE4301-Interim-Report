@@ -56,7 +56,7 @@ new gridjs.Grid({
   data: [
     [
       "1. Prototype refinement",
-      "Incorporate NUH feedback and address the limitations identified",
+      "• Incorporate NUH feedback and address the limitations identified",
       "Refined web prototype"
     ],
 
@@ -74,7 +74,7 @@ new gridjs.Grid({
 
     [
       "4. Validation and finalisation",
-      gridjs.html("• Evaluation with NUH instructors and nurse managers<br>• Final fixes"),
+      gridjs.html("• Evaluate with NUH instructors and nurse managers<br>• Implement final fixes"),
       "Final deliverables"
     ]
   ]
