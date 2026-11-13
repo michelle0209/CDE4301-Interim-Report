@@ -146,6 +146,9 @@
       <sl-tree-item>
         <a href="#sub-section-5-header-5">5.5 Assessors</a>
       </sl-tree-item>
+      <sl-tree-item>
+        <a href="#sub-section-5-header-6">5.6 User interface and flow</a>
+      </sl-tree-item>
     </sl-tree-item>
 
     <sl-tree-item expanded>
@@ -309,11 +312,79 @@
       <div id="sub-section-2-header-2">
         <h3>2.2 Literature review</h3>
         <p>
+        Developing effective coaching skills requires more than just an understanding of coaching principles, as individuals must also be able to apply them in practice.
+        Grant (2007) compared a 13-week coaching training programme involving 23 participants with a 2-day intensive programme involving 20 participants.
+        Both programmes significantly improved their coaching skills, but the 13-week programme produced a larger improvement of 7.3 compared with 3.1 in the 2-day programme.
+        Furthermore, only the 13-week programme showed improvements in emotional intelligence.
+        These findings suggest that extended coaching training may provide additional benefits compared with shorter intensive programmes, highlighting the potential value of continued coaching development beyond initial training.
+        </p>
+
+        <p>
+        One commonly used approach to developing interpersonal communication skills is role-play, which provides learners with opportunities to apply theoretical knowledge in a simulated setting.
+        Through role-plays, learners can practice different scenarios, receive feedback, and reflect on their performance in a controlled environment.
+        There are two commonly used forms of traditional role-play are peer role-play and role-play involving the use of standardised participants (SPs).
+        </p>
+
+        <p>
+        In peer role-play, learners take turns to be the coach and coachee, allowing them to experience both roles and understand each other's perspectives (Paramasivan & Khoo, 2020).
+        While this is a low-cost and easily accessible approach, the realism of the scenario and the quality of the feedback depend on the partner’s acting ability and coaching experience.
+        Furthermore, learners may feel self-conscious practising in front of colleagues, potentially discouraging them from experimenting with new coaching techniques.  
+        </p>
+
+        <p>
+        SPs, on the other hand, provide realistic scenarios and structured feedback, which addresses the limitations of peer role-play.
+        However, providing consistent feedback remains a challenge, as even trained SPs may experience difficulty in delivering constructive and specific feedback to learners.
+        According to a nationwide survey involving 250 SPs conducted by Abe et al. (2011), 56.8% reported difficulty with 4 or more feedback-related tasks, such as giving positive feedback when a learner performed poorly or distinguishing between several learners' interviews when giving individual feedback.
+        Furthermore, engaging SPs is resource-intensive, as it requires funding, training, and coordinated scheduling (Sehgal et al., 2025).
+        As a result, these limitations may limit the accessibility and frequency of practice opportunities.  
+        </p>
+
+        <p> 
+        AI-based conversational simulations have become a potential approach to overcoming some of the limitations of traditional role-plays.
+        Unlike conventional methods that require the involvement of peers or trained participants, AI-based simulation allows learners to practice independently and repeatedly, providing greater flexibility and accessibility.
+        Powered by large language models (LLMs) and speech technologies, these systems can simulate interactive conversations with virtual characters and have been explored in healthcare education to support communication training (Herschbach et al., 2025).  
+        </p>
+
+        <p>
+        Beyond simulating conversations, AI-based systems can also provide structured feedback to support skill development.
+        Depending on their capabilities, these systems can analyse conversational content, vocal tone, and non-verbal cues to evaluate different aspects of communication (Stamer et al., 2023).
+        Such feedback may help learners to identify their strengths and areas for improvement, supporting reflection and continued practice.
+        </p>
+
+        <p>
+        Despite these potential benefits, AI-based simulations still face several limitations.
+        The most commonly reported barrier is lack of authenticity.
+        Virtual patients are not able to adapt to the context of a conversation, handle small talk, or sustain a natural flow of conversation, and their responses can feel limited and predictable, which some learners found unnatural (Stamer et al., 2023).
+        Furthermore, Li et al. (2024) highlighted challenges associated with using LLMs to simulate patients, such as role reversal, hallucinations and repetitive responses.
+        These issues may affect the consistency and realism of simulated interactions, highlighting the need for mechanisms that guide the LLMs’ behaviour throughout the conversation.
+        </p>
+
+        <p>
+        Beyond these practical limitations, evidence regarding the effectiveness of AI-based communication simulations remains limited.
+        Although these systems show potential for supporting communication skills training, further evaluation is needed to establish their effectiveness and reliability (Jo et al., 2025).
         </p>
 
       <div id="sub-section-2-header-3">
         <h3>2.3 Research gaps</h3>
         <p>
+        Based on the primary research and literature review, several limitations have been identified to model the development of the proposed AI coaching simulator.
+        Firstly, although NUH’s ELCP masterclass introduces the principles and techniques of coaching, there is a need for additional opportunities to practise and apply these skills in realistic workplace conversations.
+        Traditional role-play methods may provide valuable learning experiences.
+        However, it is limited by the availability of participants, facilitators, and resources.
+        </p>
+
+        <p>
+        Secondly, while AI-based simulations offer opportunities and repeated practice, previous research has highlighted the limitations in conversational authenticity and natural dialogue.
+        This highlights the need to investigate whether AI-generated responses can realistically represent the emotional and behavioural actions of nursing staff during challenging coaching conversations.
+        </p>
+
+        <p>
+        Lastly, although AI-based systems can provide automated coaching feedback, the accuracy and suitability of such feedback for NUH’s specific coaching requirements remain to be established.
+        In particular, it is necessary to evaluate whether AI-generated assessments are able to reflect the GROW-L and 3Ps frameworks used in the ELCP masterclass.
+        </p>
+
+        <p>
+        Therefore, this project aims to develop an AI coaching-based simulator tailored to NUH’s training requirements, providing nurse managers with opportunities to practice realistic coaching conversations and receive structured feedback aligned with the GROW-L and 3Ps frameworks.
         </p>
 
             
@@ -336,7 +407,36 @@
 
       <div id="sub-section-4-header-1">
         <h3> 4.1 Concept generation </h3>
-        <p> </p>
+        <p>
+        Based on the training needs identified, concept generation focused on two functions:
+        </p>
+
+        <ol>
+          <li>Simulating interactive coaching conversations</li>
+          <li>Providing feedback on coaching performance</li>
+        </ol>
+
+        <p>
+        For conversation simulation, several approaches were identified from the literature.
+        One approach is using a simple prompt-based LLM, where predefined character instructions and scenario information are provided to guide the generation of conversational responses.
+        This enables open-ended interactions without requiring complex system configurations (Jo et al., 2025).
+        Additional behavioural instructions or guardrails can also be incorporated to define how the virtual character should respond and avoid unwanted behaviours.
+        </p>
+
+        <p>
+        To further support behavioural consistency, adaptive behavioural modelling was identified as a complementary approach.
+        This introduces an additional mechanism to regulate how the virtual characters' emotional state and behaviour change in response to users' inputs rather than relying solely on prompt-based instructions (Jo et al., 2025).
+        </p>
+
+        <p>
+        For performance feedback, potential approaches included predefined rule-based feedback and LLM-generated assessments using the established coaching criteria.
+        Additional features such as facial expression, tone, and body movement analysis of the nurse managers were also identified for future development.
+        </p>
+
+        <p>
+        To integrate conversation simulation and performance assessment, a system architecture consisting of separate AI coachee and AI assessor components was proposed.
+        This allows the two components to perform different functions while operating within a single coaching simulator.
+        </p>
       </div>
 
       <div id="sub-section-4-header-2">
@@ -348,18 +448,28 @@
           <div id="table-1"></div>
           </table-component>
         <p>
-
+        The evaluation highlighted that no single approach can fully address the requirements of the proposed simulator.
+        While prompt-based LLMs support flexible conversations, additional behavioural modelling and guardrails are required to provide explicit control over emotional changes and disclosure progression.
+        Similarly, although LLM-based assessment offers greater flexibility in evaluating open-ended coaching conversations, predefined verification rules can help ensure that supporting evidence is traceable to the conversation transcript.
         </p>
       </div>
 
       <div id="sub-section-4-header-3">
         <h3> 4.3 Selection and rationale </h3>
-        <p> </p>
+        <p> 
+        Based on the evaluation, a hybrid LLM and rule-based architecture was selected for the AI coaching simulator. 
+        This approach combines the conversational flexibility of LLMs with explicit behavioural modelling to guide the virtual nurse's emotional responses and disclosure progression, allowing nurse managers to practice responding to different emotional and behavioural cues.
+        The selected design consists of 2 main components: an AI coachee and a separate AI assessor.  
+        This separation allows each component to be developed, tested, and validated independently, making it easier to identify and address issues in conversation simulation and coaching assessment. 
+        The AI coachee integrates LLM-generated dialogue, emotional and trust modelling, and voice-based interaction through a 3D avatar. The AI assessor provides structured coaching feedback aligned with NUH’s GROW-L and 3Ps frameworks, supported by transcript evidence verification.
+        The overall system architecture is illustrated in Figure 1.
+  
+        </p>
       <div class="diagram-image">
         <image-component
           tag="image"
           source="assets/Untitled Diagram.jpg"
-          subtitle="Figure ">
+          subtitle="Figure 1">
         </image-component>
       </div>
 
@@ -376,28 +486,66 @@
 
       <div id="sub-section-5-header-2">
         <h3>5.2 Scenario design</h3>
-        <p> </p>
+        <p>
+        Currently, only one coaching scenario has been developed to simulate a workplace situation that nurse managers may encounter when coaching staff nurses. 
+        The current scenario focuses on a staff nurse experiencing burnout, but the underlying reasons are not immediately revealed to the nurse manager. 
+        In this scenario, the nurse manager needs to understand the staff nurse's concerns, show empathy and encourage the staff nurse to reflect on their situation rather than immediately offering solutions. 
+        The AI staff nurse will respond based on the nurse manager's coaching approach, allowing the nurse manager to practise handling sensitive conversations and emotional responses.    
+        </p>
       </div>
 
       <div id="sub-section-5-header-3">
         <h3>5.3 AI coachee and emotional-state model</h3>
-        <p> </p>
+        <p> 
+        To represent the virtual staff nurse's emotional state, the system uses the Pleasure-Arousal-Dominance (PAD) framework, also known as Valence-Arousal-Dominance (VAD). 
+        The framework consists of 3 dimensions: pleasure (valence) represents emotional state, arousal represents emotional activation, and dominance represents the sense of control (Mehrabian & Russell, 1974). 
+        In this project, each dimension is represented using values ranging from −1 to +1.
+        After each remark from the nurse manager, using the six scores, which are Understood, Curiosity, Autonomy, Meaning, Judged and Pushed. 
+        Each criterion is scored based on how the virtual staff nurse may perceive the nurse manager's response. Positive interactions, such as showing understanding, curiosity and encouraging autonomy, may increase trust and make the virtual staff nurse more comfortable during the conversation. In contrast, judgemental responses or pushing the virtual staff nurse toward a particular solution may reduce trust and make the staff nurse more defensive or withdrawn. 
+        These scores then update the virtual staff nurse’s emotional state, which influences the facial expressions, voice, and body language the virtual character displays.
+        </p>
       </div>
 
       <div id="sub-section-5-header-4">
         <h3>5.4 3D character</h3>
-        <p> </p>
+        <p> 
+        A 3D virtual staff nurse represents the coachee during coaching conversations. 
+        The character resembles a staff nurse and is incorporated into the web-based interface to provide a more interactive, realistic coaching experience. 
+        This allows nurse managers to interact with a virtual character rather than relying only on text-based conversations.
+        To support realistic facial expressions, the project uses the Facial Action Coding System (FACS), which describes facial movements through different Action Units. 
+        These Action Units are used to control the facial animations, such as eyebrow movements, lip movements and changes in facial tension.
+        The virtual staff nurse’s facial expressions are controlled using predefined mappings between the PAD/VAD emotional framework and FACS Action Units. 
+        Different emotional states are assigned corresponding facial movements, which then control the 3D character’s facial expressions. 
+        </p>
       </div>
 
       <div id="sub-section-5-header-5">
         <h3>5.5 Assessors</h3>
-        <p> </p>
+        <p> 
+        The assessment system will be developed by using the 3P and GROW-L frameworks introduced during the ELCP masterclass.  
+        After each coaching session, the conversation transcript will be sent to the AI assessor. 
+        The assessment will focus only on the nurse manager's responses, using the virtual staff nurse's responses as context. 
+        The feedback page will display a competency score out of 100 for each category, showing how well the nurse manager has demonstrated the coaching skills. 
+        The system will also provide explanations supported by examples from the conversation, helping nurse managers to understand which coaching behaviours were demonstrated and which areas need improvement. 
+        The system will also provide suggestions to help nurse managers reflect on their coaching approach and improve their responses in future coaching sessions.
+        </p>
       </div>
+
+      <div id="sub-section-5-header-6">
+        <h3>5.6 User interface and flow</h3>
+        <p>
+        The user will begin by selecting a coaching scenario. 
+        After selecting a scenario, a brief description of the situation will appear, including information about the virtual staff nurse they will meet and their role as the nurse manager. 
+        The nurse manager can then start the coaching session when they are ready. 
+        During the session, the virtual staff nurse will respond based on the conversation, and the nurse manager can end the session whenever they feel it is appropriate. 
+        After completing the coaching session, the nurse manager will be directed to a feedback page where they can review their assessment results and retry the scenario to practise different coaching approaches.
+        </p>
+      
+
 
       <sl-divider></sl-divider>  
       <div id="sub-section-6">
         <h2>6. Prototype testing and preliminary evaluation</h2>
-        <p> </p>
       </div>
 
       <div id="sub-section-6-header-1">
@@ -407,7 +555,39 @@
 
       <div id="sub-section-6-header-2">
         <h3>6.2 NUH evaluation and findings</h3>
-        <p> </p>
+        <p> 
+        A preliminary evaluation was conducted with the NUH representatives to obtain initial feedback on the prototype’s overall usability, simulation realism, and coaching feedback quality. 
+        During the meeting, Mr Razali, a senior nurse clinician at NUH and one of the ELCP masterclass instructors, tried out the prototype by interacting with the virtual staff nurse created. 
+        This was followed by a review of the generated coaching feedback and discussions of potential improvements. 
+        The relevant transcript excerpts are provided in Appendix A.
+        </p>
+
+        <p>
+        Overall, the prototype received positive preliminary feedback, particularly regarding the competency-level breakdown of coaching performance.
+        The evaluator highlighted that this feedback approach may help nurse managers identify specific areas for improvement rather than relying solely on an overall score (Appendix _).
+        An example of the competency-level feedback is shown in Figure __.  
+        </p>
+
+        <p>
+        However, several limitations were identified.
+        Firstly, the virtual nurse responses were perceived as repetitive, particularly during the initial stages of the conversation.
+        To improve realism, he suggested incorporating NUH-specific workplace context and introducing different nurse personas to provide more varied coaching experiences.  
+        </p>
+
+        <p>
+        Secondly, discrepancies were observed in the AI-generated coaching assessment.
+        Certain coaching behaviours relating to the GROW-L components, particularly Learning, appeared in the conversation but were not fully recognised by the AI assessor.
+        This highlighted the need to investigate the assessment mechanism and validate its accuracy against expert judgements.  
+        </p>
+
+        <p>
+        Regarding usability, Mr Razali suggested several features to enhance the simulator, such as downloadable feedback reports and the ability to compare performance across multiple sessions to monitor progress and identify recurring areas for improvement.
+        </p>
+
+        <p>
+        These findings provided direction for further prototype development, particularly in refining conversational realism, improving assessment reliability and enhancing user experience.
+        However, as this was a preliminary evaluation, further testing involving more NUH experts and intended users is needed to establish the simulator's suitability for coaching training.
+        </p>
       </div>      
 
       <sl-divider></sl-divider>  
@@ -418,13 +598,44 @@
 
       <div id="sub-section-7-header-1">
         <h3>7.1 Final deliverables</h3>
-        <p> </p>
+        <p>
+        The final deliverable will include both web-based and virtual reality (VR) versions of the AI coaching simulator designed to support nurse managers in practising coaching conversations independently and repeatedly at their own convenience.
+        Building upon the initial functional prototype, further development will focus on improving simulation realism, assessment reliability and overall usability.
+        </p>
+
+        <p>
+        The intended final deliverables include:
+        </p>
+
+        <ul>
+          <li>
+          Refined AI coachee: Improved conversational realism, emotional modelling and disclosure progression to support more natural and NUH-context-appropriate coaching interactions.
+          </li>
+
+          <li>
+          Enhanced AI assessor: Improved accuracy and reliability of coaching feedback aligned with the GROW-L and 3Ps frameworks, with additional analysis of nurse managers' facial expressions and vocal tones to assess non-verbal coaching behaviours.
+          </li>
+
+          <li>
+          Web-based and VR simulator: Refined user interface, avatar interactions and voice-based communication, with VR integration to support immersive coaching practice.
+          </li>
+
+          <li>
+          Additional coaching scenarios: Development of scenarios involving different workplace situations, such as staff nurses who are resistant to feedback or uncertain about their career development, with different difficulty levels to allow nurse managers to practise adapting their coaching approaches.
+          </li>
+        </ul>
       </div>
 
       <div id="sub-section-7-header-2">
         <h3>7.2 Work plan</h3>
-        <p> </p>
-      </div> 
+        <p>
+        The work plan is organised into four phases leading to the final deliverables (Table __).
+        </p>
+
+      <table-component subtitle="Table ">
+        <div id="table-2"></div>
+      </table-component>
+          </div> 
 
       <div id="sub-section-7-header-3">
         <h3>7.3 Risks and mitigations</h3>
