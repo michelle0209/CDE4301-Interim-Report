@@ -151,28 +151,29 @@
       </div>
 
       <div id="sub-section-1-header-1">
-        <h3>1.1 Background</h3>
-        <p>
-          Nurses face a range of workplace challenges, including high workloads, work-related stress and burnout.
-          A meta-analysis by Ge et al. (2023), involving 94 studies across more than 30 countries, estimated the global prevalence of nursing burnout at 30%.
-          Similarly, a study involving 1,826 nurses at Singapore General Hospital found that 39% experienced high emotional exhaustion, 40% high depersonalisation and 59% low personal accomplishment (Ang et al., 2016).
-          Kiptulon et al. (2024) also identified factors contributing to work-related stress, including understaffing, role conflict, bullying and a lack of support from supervisors and colleagues.
-          Their review found that positive organisational cultures, characterised by effective communication, teamwork and supportive leadership, were associated with lower levels of work-related stress.
-        </p>
+          <h3>1.1 Background</h3>
 
-        <p>
-          These findings highlight the importance of supportive leadership in nursing.
-          A study involving 900 nurses in the United States found that work engagement was significantly associated with job satisfaction (p &lt; 0.001) (Wei et al., 2023).
-          Effective communication also plays an important role in supporting staff development and fostering a positive working environment (Meneses-La-Riva et al., 2025).
-          Unlike traditional directive leadership approaches, coaching leadership emphasises empathy, active listening, reflective questioning and helping individuals develop their own solutions.
-          Through coaching, nurse managers can encourage staff nurses to reflect on their experiences, develop problem-solving skills and take greater ownership of their professional development (Richardson et al., 2023; Wei et al., 2026).
-        </p>
+          <p>
+              Nurses face various workplace challenges, including high workloads, stress and burnout.
+              A meta-analysis of 94 studies across more than 30 countries estimated the global prevalence of nursing burnout at 30% (Ge et al., 2023).
+              Similarly, a study of 1,826 nurses at Singapore General Hospital found that 39% experienced high emotional exhaustion, 40% high depersonalisation and 59% low personal accomplishment (Ang et al., 2016).
+              Kiptulon et al. (2024) identified factors contributing to work-related stress, including understaffing, role conflict, bullying and lack of support.
+              Their review also found that supportive organisational cultures were associated with lower work-related stress.
+          </p>
 
-        <p>
-          To promote a coaching-oriented leadership culture, the National University Hospital (NUH) incorporates coaching principles into its Exemplary Leader Coaching Programme (ELCP) through a one-day masterclass.
-          During the masterclass, nurse managers learn coaching mindsets, communication techniques and the 3P and GROW-L frameworks.
-          The 3P framework consists of Partner, Practice and Process, while the GROW-L framework guides coaching conversations through five stages, which are Goal, Reality, Options, Will and Learning.
-        </p>
+          <p>
+              These findings highlight the importance of supportive leadership in nursing.
+              A study of 900 nurses in the United States found that work engagement was significantly associated with job satisfaction (p &lt; 0.001) (Wei et al., 2023).
+              Effective communication also supports staff development and a positive working environment (Meneses-La-Riva et al., 2025).
+              Unlike directive leadership, coaching emphasises empathy, active listening, reflective questioning and guiding individuals to develop their own solutions.
+              This encourages staff nurses to reflect on their experiences, develop problem-solving skills and take ownership of their professional development (Richardson et al., 2023; Wei et al., 2026).
+          </p>
+
+          <p>
+              To promote coaching-oriented leadership, the National University Hospital (NUH) incorporates coaching principles into its Exemplary Leader Coaching Programme (ELCP) through a one-day masterclass.
+              Nurse managers learn coaching mindsets, communication techniques and the 3P and GROW-L frameworks.
+              The 3P framework consists of Partner, Practice and Process, while GROW-L guides coaching conversations through Goal, Reality, Options, Will and Learning.
+          </p>
       </div>
 
       <div id="sub-section-1-header-2">
@@ -239,11 +240,10 @@
       <div id="sub-section-2-header-2">
         <h3>2.2 Literature review</h3>
         <p>
-        Developing effective coaching skills requires more than just an understanding of coaching principles, as individuals must also be able to apply them in practice.
-        Grant (2007) compared a 13-week coaching training programme involving 23 participants with a 2-day intensive programme involving 20 participants.
-        Both programmes significantly improved participants' coaching skills, but the 13-week programme produced a larger improvement of 7.3 compared with 3.1 in the 2-day programme.
-        Furthermore, only the 13-week programme showed improvements in emotional intelligence.
-        These findings suggest that extended coaching training may provide additional benefits compared with shorter intensive programmes, highlighting the potential value of continued coaching development beyond initial training.
+        Developing effective coaching skills requires both theoretical understanding and practical application. 
+        Grant (2007) compared a 13-week coaching programme involving 23 participants with a 2-day programme involving 20 participants. 
+        Both improved coaching skills, but the 13-week programme produced greater improvement (7.3 versus 3.1) and was the only programme to improve emotional intelligence. 
+        These findings highlight the potential benefits of continued coaching development beyond initial training.
         </p>
         <p>
         Role-play is a common way to develop interpersonal communication skills, letting learners apply theory, practise different scenarios, receive feedback and reflect on their performance in a controlled setting.
@@ -407,8 +407,8 @@
           <div id="table-6"></div>
         </table-component>
         <p>
-        The evaluation showed that no single approach meets all of the requirements.
-        Prompt-based LLMs need behavioural modelling and guardrails to control emotional changes and disclosure, and LLM-based assessment needs verification rules so that its evidence can be traced to the transcript.
+        The evaluation showed that no single approach meets all requirements. 
+        Behavioural modelling and guardrails are needed to control LLM-generated responses, while verification rules ensure assessment evidence is traceable to the transcript.
         </p>
       </div>
 
@@ -546,8 +546,8 @@
         <h3>6.1 Functional testing</h3>
         <p>
         Functional testing was done at two levels.
-        First, 161 automated unit tests check the safeguards using a fake AI model with fixed replies, and 17 of them cover F3 to F5.
-        These show that the safeguard code works, but not that the live model behaves.
+        First, 161 automated unit tests check the safeguards using a fake AI model with fixed replies, including 17 tests covering F3–F5.
+        These verified the safeguard code but not the live model's behaviour.
         </p>
         <p>
         Second, three live tests ran scripted, typed conversations through the real backend and the live coachee model (openai/gpt-oss-120b on Groq), with voice off so that speech recognition errors could not affect the results (Table 7).
@@ -579,7 +579,7 @@
         Every leak came from a supportive conversation, and none came from a dismissive one.
         </p>
         <p>
-        Three scripted conversations were each run three times for six turns. Script A was supportive throughout, script B was supportive and then judging at turn 4, and script C was dismissive throughout.
+        Three six-turn scripts were each repeated three times: supportive (A), supportive followed by judgement at turn 4 (B), and dismissive (C). 
         Each reply was coded for the deepest disclosure layer it clearly stated (Section 5.3).
         A leak was a reply deeper than the layer the engine permits after that turn's trust change.
         A stricter count compared the reply with the limit the model was given before replying.
@@ -710,8 +710,7 @@
           <div id="table-9"></div>
         </table-component>
         <p>
-        Phase 1 addresses the problems found during testing (Section 6).
-        These are the repetitive replies, the disclosure leaks (F4), the missing natural ending (F7), the incomplete feedback reports, and the end-to-end response time (P1).
+        Phase 1 addresses the limitations identified in Section 6, including repetitive responses, disclosure leaks (F4), unnatural endings (F7), incomplete feedback and response delays (P1).
         The assessor's accuracy is then improved in Phase 2 and validated against NUH coaching experts in Phase 3, before the VR version is built in Phase 4.
         </p>
       </div>
@@ -739,7 +738,7 @@
       <h2>Individual contributions</h2>
       <ul>
         <li><strong>Nur Muhammad:</strong> Emotional state modelling, coachee logic, facial expressions, body movement/gesture, design specifications, functional testing</li>
-        <li><strong>Melisa:</strong> Website interface development, avatar modelling, background research, concept generation, evaluation and selection, NUH evalutaion, project plan </li>
+        <li><strong>Melisa:</strong> Website interface development, avatar modelling, background research, concept generation, evaluation and selection, NUH evaluation, project plan </li>
         <li><strong>Michelle Tay Xin Ru:</strong> Development of the 3P and GROW-L coaching assessment criteria, introduction, detailed design documentation, project plan and conclusion</li>
       </ul>
     </div>
@@ -1006,7 +1005,13 @@
           <em>Source: Original transcript, pp. 20–21.</em>
         </p>
       </div>
-    </div>
+
+    <h3>Prototype Demonstration</h3>
+    <video-component
+        tag="video-1"
+        source="https://www.youtube.com/embed/PZ7fyHeAB-8"
+        subtitle="Video 1: Demonstration of the AI coaching simulator by the NUH director">
+    </video-component>
 
   </div>
 
