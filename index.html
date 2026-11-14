@@ -52,22 +52,27 @@
 <body>
   <div class="content">
 
-    <image-component
-        tag="nus-logo"
-        source="assets/NUS_logo_full-horizontal.jpg"
-        subtitle="">
-    </image-component>
+<div class="nus-logo">
+    <img
+        src="assets/NUS_logo_full-horizontal.jpg"
+        alt="NUS Logo"
+    >
+</div>
 
-    <h2>AI conversation coach for nursing communication training</h2>
-    <h2>Members:</h2>
+<div class="report-cover">
+    <h1>CDE4301 Innovation &amp; Design Capstone</h1>
+    <h1>AY2026/2027 Semester 1</h1>
+    <h1>VR-403: AI conversation coach for nursing communication training</h1>
+    <h1>Group Report</h1>
+</div>
+
     <!-- Team Members -->
     <div class="team-member-wrapper">
       <team-member name="Nur Muhammad" department="Biomedical Engineering"></team-member>
       <team-member name="Melisa" department="Biomedical Engineering"></team-member>
       <team-member name="Michelle Tay Xin Ru" department="Biomedical Engineering"></team-member>
     </div>
-    <!-- This is a divide from the shoelace library for aesthetic purpose -->
-    <sl-divider></sl-divider>
+
 
     <!-- This is the table-of-content component use to define all of the link directly to each section -->
 
@@ -148,29 +153,25 @@
       <div id="sub-section-1-header-1">
         <h3>1.1 Background</h3>
         <p>
-        Nurses face a range of workplace challenges, including high workloads, work-related stress and burnout.
-        A meta-analysis conducted by Ge et al. (2023), involving 94 studies across more than 30 countries, estimated the global prevalence of nursing burnout at 30%.
-        Similarly, a study of 1,826 nurses at Singapore General Hospital found that 39% experienced high emotional exhaustion, 40% high depersonalisation, and 59% low personal accomplishment (Ang et al., 2016).
-        Furthermore, Kiptulon et al. (2024) identified several factors contributing to work-related stress among nurses, including understaffing, role conflict, bullying, and a lack of support from supervisors and colleagues.
-        Their systematic review also found that positive organisational cultures, characterised by effective communication, teamwork, and supportive leadership, were associated with lower levels of work-related stress.
+          Nurses face a range of workplace challenges, including high workloads, work-related stress and burnout.
+          A meta-analysis by Ge et al. (2023), involving 94 studies across more than 30 countries, estimated the global prevalence of nursing burnout at 30%.
+          Similarly, a study involving 1,826 nurses at Singapore General Hospital found that 39% experienced high emotional exhaustion, 40% high depersonalisation and 59% low personal accomplishment (Ang et al., 2016).
+          Kiptulon et al. (2024) also identified factors contributing to work-related stress, including understaffing, role conflict, bullying and a lack of support from supervisors and colleagues.
+          Their review found that positive organisational cultures, characterised by effective communication, teamwork and supportive leadership, were associated with lower levels of work-related stress.
         </p>
-        <p>
-        These findings highlight the importance of a supportive working environment, and a study of 900 nurses in the United States found that work engagement was significantly associated with job satisfaction (p &lt; 0.001) (Wei et al., 2023).
-        As workforce demands increase, supportive leadership such as coaching may help meet the evolving needs of nursing staff.
-        Unlike directive leadership, coaching emphasises empathy, collaboration and a growth-oriented mindset, encouraging staff nurses to reflect on their experiences, develop critical thinking and problem-solving skills, and take greater ownership of their professional development (Wei et al., 2026).
-        </p>
-        <p>
-        Effective communication is essential to nursing practice, enabling nurse managers to support staff development, address workplace challenges, and foster a positive work environment (Meneses-La-Riva et al., 2025). Nurse managers also play an important role in guiding staff nurses through challenges such as workplace conflicts, work-related stress and professional development (Richardson et al., 2023).
 
-        </p>
         <p>
-        To promote a coaching-oriented leadership culture, the National University Hospital (NUH) incorporates coaching principles into its Exemplary Leader Coaching Programme (ELCP) through a one-day masterclass.
-        In the masterclass, nurse managers learn coaching mindsets, communication techniques, and the 3P and GROW-L frameworks.
-        The 3P framework includes Partner, Practice and Process.
-        The GROW-L framework guides coaching conversations through five stages, which are Goal, Reality, Options, Will, and Learning.
+          These findings highlight the importance of supportive leadership in nursing.
+          A study involving 900 nurses in the United States found that work engagement was significantly associated with job satisfaction (p &lt; 0.001) (Wei et al., 2023).
+          Effective communication also plays an important role in supporting staff development and fostering a positive working environment (Meneses-La-Riva et al., 2025).
+          Unlike traditional directive leadership approaches, coaching leadership emphasises empathy, active listening, reflective questioning and helping individuals develop their own solutions.
+          Through coaching, nurse managers can encourage staff nurses to reflect on their experiences, develop problem-solving skills and take greater ownership of their professional development (Richardson et al., 2023; Wei et al., 2026).
         </p>
+
         <p>
-        While the ELCP provides a foundation in coaching principles, nurse managers still need repeated practice, reflection and feedback to apply them, especially in sensitive conversations, with staff nurses who resist feedback, or when changing habits of giving direct instruction.
+          To promote a coaching-oriented leadership culture, the National University Hospital (NUH) incorporates coaching principles into its Exemplary Leader Coaching Programme (ELCP) through a one-day masterclass.
+          During the masterclass, nurse managers learn coaching mindsets, communication techniques and the 3P and GROW-L frameworks.
+          The 3P framework consists of Partner, Practice and Process, while the GROW-L framework guides coaching conversations through five stages, which are Goal, Reality, Options, Will and Learning.
         </p>
       </div>
 
@@ -203,7 +204,7 @@
         </p>
         <ul>
           <li>To develop an AI-based assessment system based on the 3P and GROW-L frameworks to evaluate the nurse managers’ coaching skills and provide structured feedback on areas demonstrated well and on areas that can be improved</li>
-          <li>To develop both web-based and virtual reality (VR) interfaces that allow nurse managers to practise coaching conversations</li>
+          <li>To develop both web-based interfaces that allow nurse managers to practise coaching conversations</li>
           <li>To incorporate emotional responses and facial expressions into the virtual staff nurse to make coaching more realistic</li>
         </ul>
         <p>
@@ -225,8 +226,8 @@
       <div id="sub-section-2-header-1">
         <h3>2.1 Primary research</h3>
         <p>
-        To gain a deeper insight into the problem, regular meetings were conducted with the head nurse at NUH from September 2026 onwards.
-        The purpose was to understand how coaching skills are trained and assessed in the hospital and what practice tools are needed to help nurse managers improve their coaching skills.
+        To gain a deeper insight into the problem, regular meetings were conducted with the head nurse at NUH from September 2026.
+        The purpose was to understand how coaching skills are trained and assessed in the hospital and what tools are needed to help nurse managers improve their coaching skills.
         The project initially explored AI-supported practice for nursing communication with patients, but these meetings helped narrow its focus to supporting nurse managers in developing their coaching skills when engaging with nursing staff.
         These discussions also allowed us to clarify project requirements and ensure that the proposed solution addresses the gap that NUH was facing.
         </p>
@@ -472,7 +473,7 @@
         </p>
         <p>
         The same scores update a trust level between 0 and 1.
-        Aisha's hidden concerns are split into four disclosure layers, from layer 0 (she is tired and going through the motions) to layer 3 (she feels guilty about considering leaving).
+        Aisha's hidden concerns are split into four disclosure layers, from layer 0 (tired and going through the motions) to layer 3 (feels guilty about considering leaving).
         A deeper layer unlocks only when trust passes its threshold (0.4, 0.6 and 0.78), and by at most one layer per turn, so that she opens up gradually as the manager builds trust, as described by Social Penetration Theory (Altman &amp; Taylor, 1973).
         </p>
       </div>
@@ -737,9 +738,9 @@
       <sl-divider></sl-divider>
       <h2>Individual contributions</h2>
       <ul>
-        <li><strong>Nur Muhammad:</strong> Emotional state modelling, coachee logic, facial expressions, body movement/gesture, functional testing</li>
-        <li><strong>Melisa:</strong> </li>
-        <li><strong>Michelle Tay Xin Ru:</strong> </li>
+        <li><strong>Nur Muhammad:</strong> Emotional state modelling, coachee logic, facial expressions, body movement/gesture, design specifications, functional testing</li>
+        <li><strong>Melisa:</strong> Website interface development, avatar modelling, background research, concept generation, evaluation and selection, NUH evalutaion, project plan </li>
+        <li><strong>Michelle Tay Xin Ru:</strong> Development of the 3P and GROW-L coaching assessment criteria, introduction, detailed design documentation, project plan and conclusion</li>
       </ul>
     </div>
 
